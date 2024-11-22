@@ -163,24 +163,6 @@ body {
   animation-delay: 0.3s;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(170deg)
-    brightness(100%) contrast(100%);
-}
-.section-two .carousel,
-.section-two .carousel-inner,
-.section-two .carousel-item,
-.section-two .custom-image {
-  width: 100%;
-}
-
-.custom-image {
-  padding-right: 60px;
-  padding-left: 60px;
-  object-fit: cover;
-}
-
 /* faq-section  */
 .accordion-button {
   text-align: right;
@@ -229,4 +211,40 @@ body {
   right: 10px;
   font-size: 30px;
   cursor: pointer;
+}
+
+/* Image hover effect */
+
+.card img,
+.step img {
+  transition: transform 0.3s ease;
+}
+
+.benefits-section img:hover,
+.how-to-start img:hover {
+  transform: rotate(10deg); /* Rotate image on hover */
+}
+.card {
+  box-shadow: none;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+.sectionTwo {
+  background-image: url(../imgs/vivid-blurred-colorful-wallpaper-background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 20px 0;
 }

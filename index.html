@@ -179,13 +179,13 @@
         </div>
       </div>
 
-      <!-- Section Two -->
-      <div class="section-two container-fluid bg py-5">
-        <div class="col-12 mb-0 pt-3 pb-5 text-center">
+      <!--SectionTwo -->
+      <div class="container-fluid sectionTwo py-5 bg">
+        <div class="col-12 pb-5 text-center">
           <h2
             data-aos="fade-up"
             data-aos-delay="100"
-            class="title mb-3 mt-1"
+            class="title my-2"
             style="
               position: relative;
               display: inline-block;
@@ -205,57 +205,34 @@
             ></span>
           </h2>
         </div>
-
-        <!-- Bootstrap Carousel that covers full section width -->
-        <div
-          id="carouselExample"
-          class="carousel slide"
-          data-bs-ride="carousel"
-          data-aos="zoom-in-up"
-          data-aos-delay="100"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card bg">
               <img
                 src="./imgs/user1.jfif"
-                class="d-block w-100 img-fluid custom-image"
+                class="card-img-top img-fluid"
                 alt="صورة العرض 1"
               />
             </div>
-            <div class="carousel-item">
+          </div>
+          <div class="col" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card bg">
               <img
                 src="./imgs/user2.jfif"
-                class="d-block w-100 img-fluid custom-image"
+                class="card-img-top img-fluid"
                 alt="صورة العرض 2"
               />
             </div>
-            <div class="carousel-item">
+          </div>
+          <div class="col" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card bg">
               <img
                 src="./imgs/user3.jfif"
-                class="d-block w-100 img-fluid custom-image"
+                class="card-img-top img-fluid"
                 alt="صورة العرض 3"
               />
             </div>
           </div>
-          <!-- Carousel Controls -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
 
@@ -345,7 +322,7 @@
                 "
               >
                 <img
-                  src="./imgs/gift-box_6663340.svg"
+                  src="./imgs/gift-box.png"
                   alt="اشتراك"
                   class="img-fluid mb-3"
                   style="max-width: 55px"
@@ -672,29 +649,39 @@
 
           <!-- Contact Info Section -->
           <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
-            <p class="mb-0 mt-1 fs-6" style="font-size: 0.85rem">تواصل معنا:</p>
-            <p class="mb-0 mt-1 fs-6" style="font-size: 0.85rem">
-              البريد الإلكتروني:
-              <a
-                href="#"
-                class="text-decoration-none text-warning"
-                onclick="openEmailForm()"
-                >support@mtcgaza.com</a
+            <!-- استخدام Flexbox لعرض النصوص عموديًا -->
+            <div class="d-flex flex-column align-items-center">
+              <p class="mb-0 mt-1 fs-6" style="font-size: 0.85rem">
+                تواصل معنا:
+              </p>
+              <p class="mb-0 mt-1 fs-6" style="font-size: 0.85rem">
+                البريد الإلكتروني:
+                <a
+                  href="#"
+                  class="text-decoration-none text-warning"
+                  onclick="openEmailForm()"
+                  >support@mtcgaza.com</a
+                >
+              </p>
+              <!-- واتساب -->
+              <p
+                class="mb-0 mt-1 fs-6 d-flex align-items-center"
+                style="font-size: 0.85rem; margin-top: 8px"
               >
-            </p>
-            <!-- واتساب -->
-            <p
-              class="mb-0 mt-1 fs-6"
-              style="font-size: 0.85rem; margin-top: 8px"
-            >
-              <a
-                href="https://wa.me/970595532700"
-                target="_blank"
-                class="text-decoration-none text-warning"
-              >
-                تواصل معنا عبر واتساب
-              </a>
-            </p>
+                <a
+                  href="https://wa.me/970595532700"
+                  target="_blank"
+                  class="text-decoration-none text-warning d-flex align-items-center"
+                >
+                  <img
+                    src="./imgs/whatsapp.png"
+                    alt="واتساب"
+                    style="width: 20px; height: 20px; margin-left: 8px"
+                  />
+                  تواصل معنا عبر واتساب
+                </a>
+              </p>
+            </div>
           </div>
 
           <!-- model -->
